@@ -1,0 +1,31 @@
+<head>
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+</head>
+
+<div
+  class="loader-content-component busy animate__animated animate__fadeIn animate__faster"
+>
+  <div
+    class="animate__animated animate__backInLeft"
+    [ngClass]="{ animate__fadeOutRight: animatedOut === true }"
+  >
+    <div
+      class="animate__animated"
+      [ngClass]="{ animate__tada: shakeAnimated === true }"
+    >
+      <ion-img
+        style="width: 120px"
+        src="/assets/icon/loading-img-{{ counter }}.png"
+        alt="The Wisconsin State Capitol building in Madison, WI at night"
+      ></ion-img>
+    </div>
+  </div>
+  <div>
+    <ion-text color="medium" class="text-loader">
+      <h3>Cargando...</h3>
+    </ion-text>
+  </div>
+</div>

@@ -1,0 +1,19 @@
+<div *ngIf="loader">
+  <app-loader [transitionDuration]="2000"></app-loader>
+</div>
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>loader</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <div>
+    <ion-button (click)="showLoader()">Mostar loader del componente</ion-button>
+  </div>
+  <div>
+    <ion-button (click)="showLoaderWithRedux()"
+      >Mostrar redux loader</ion-button
+    >
+  </div>
+</ion-content>
